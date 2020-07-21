@@ -1,0 +1,44 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+/* wrapper styles */
+
+.wrapper {
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
