@@ -4,9 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spencer Davis Project Two</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <a href="#main" class="skip-link">Jump directly to main content</a>
+    <header>
+      <div class="wrapper">
+        <div class="landingForm">
+          <h1>life_minder v1</h1>
+          <form class="displayPicker">
+            <label for="playerNumber">How many players?</label>
+            <input
+              type="text"
+              id="playerNumber"
+              placeholder="4"
+              autocomplete="off"
+            />
+            <label for="startingLife">Starting life total?</label>
+            <input
+              type="text"
+              id="startingLife"
+              placeholder="40"
+              autocomplete="off"
+            />
+            <input type="submit" value="Set" id="displayPickerSubmit" />
+          </form>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrapper">
+        <section class="player1">
+          <div class="centralTracker">
+            <h2>Player 1</h2>
+            <span class="p1Life">40</span>
+            <div class="centralbuttons">
+              <button class="decrement1">-1</button>
+              <button id="p1i" class="increment1">+1</button>
+            </div>
+          </div>
+          <!-- <div class="p1p2CommanderTracker">
+            <form class="p1p2commanderTracker">
+              <label for="p1p2commanderDamage">Commander Damage:</label>
+              <input type="text" id="p1p2CommanderInput" placeholder="0" />
+              <input type="submit" value="set" id="p1p2commanderSubmit" />
+            </form>
+            <span class="p1p2Commander">0</span>
+          </div> -->
+          <button class="decrement5">-5</button>
+          <button class="increment5">+5</button>
+          <button class="decrement10">-10</button>
+          <button class="increment10">+10</button>
+        </section>
+        <section class="player2">
+          <div class="centralTracker">
+            <h2>Player 2</h2>
+            <span class="p2Life">40</span>
+            <div class="centralbuttons">
+              <button class="decrement1">-1</button>
+              <button class="increment1">+1</button>
+            </div>
+          </div>
+          <button class="decrement5">-5</button>
+          <button class="increment5">+5</button>
+          <button class="decrement10">-10</button>
+          <button class="increment10">+10</button>
+        </section>
+        <section class="player3">
+          <div class="centralTracker">
+            <h2>Player 3</h2>
+            <span class="p3Life">40</span>
+            <div class="centralbuttons">
+              <button class="decrement1">-1</button>
+              <button class="increment1">+1</button>
+            </div>
+          </div>
+          <button class="decrement5">-5</button>
+          <button class="increment5">+5</button>
+          <button class="decrement10">-10</button>
+          <button class="increment10">+10</button>
+        </section>
+        <section class="player4">
+          <div class="centralTracker">
+            <h2>Player 4</h2>
+            <span class="p4Life">40</span>
+            <div class="centralbuttons">
+              <button class="decrement1">-1</button>
+              <button class="increment1">+1</button>
+            </div>
+          </div>
+          <button class="decrement5">-5</button>
+          <button class="increment5">+5</button>
+          <button class="decrement10">-10</button>
+          <button class="increment10">+10</button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        copyright spencer davis 2020
+      </p>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="

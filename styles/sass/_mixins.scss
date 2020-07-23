@@ -1,0 +1,13 @@
+@mixin fontSize($sizeValue) {
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue/10) * 1rem;
+}
+@mixin gridCenter() {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+}

@@ -295,6 +295,17 @@ html {
   height: 100%;
 }
 
+body {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: #36382e;
+}
+
+.divHider {
+  display: none;
+}
+
 /* wrapper styles */
 .wrapper {
   max-width: 900px;
@@ -313,4 +324,187 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.skip-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.skip-link:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto;
+}
+
+header {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landingForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #273e47;
+  padding: 4rem;
+  border-radius: 1em;
+  border: 3px solid #d8c99b;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #d8c99b;
+  text-shadow: 1px 1px 1px #5bc3eb;
+  margin-bottom: 1rem;
+}
+
+.displayPicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #d8c99b;
+  text-shadow: 1px 1px 1px #5bc3eb;
+}
+
+#playerNumber,
+#startingLife,
+input[type="submit"] {
+  margin: 1rem 0 1rem 0;
+}
+
+main .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+.player1,
+.player2,
+.player3,
+.player4 {
+  position: relative;
+  padding: 10rem;
+  border-radius: 0.5em;
+  color: #d8c99b;
+  text-shadow: 1px 1px 1px #5bc3eb;
+}
+
+.player1 {
+  background-color: #a4243b;
+  border: 2rem solid #a4243b;
+}
+
+.player2 {
+  background-color: #d8973c;
+  border: 2rem solid #d8973c;
+}
+
+.player3 {
+  background-color: #bd632f;
+  border: 2rem solid #bd632f;
+}
+
+.player4 {
+  background-color: #273e47;
+  border: 2rem solid #273e47;
+}
+
+.player1 .decrement5,
+.player2 .decrement5,
+.player3 .decrement5,
+.player4 .decrement5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player1 .increment5,
+.player2 .increment5,
+.player3 .increment5,
+.player4 .increment5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.player1 .increment10,
+.player2 .increment10,
+.player3 .increment10,
+.player4 .increment10 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.player1 .decrement10,
+.player2 .decrement10,
+.player3 .decrement10,
+.player4 .decrement10 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.increment1,
+.decrement1 {
+  margin-top: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.p1p2CommanderTracker {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+footer {
+  background-color: #d8c99b;
+  color: #bd632f;
+  text-shadow: 1px 1px 1px #5bc3eb;
+  text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 15rem;
+}
+
+footer p {
+  padding: 1rem 0 1rem 0;
 }
