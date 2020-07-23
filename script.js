@@ -124,6 +124,12 @@ trackerApp.incrementDecrement = () => {
 };
 
 trackerApp.displaySetter = () => {
+  // prevent users from entering empty string
+  $("input").on({
+    keydown: function (e) {
+      if (e.which === 32) return false;
+    },
+  });
   $("form").on("submit", function (e) {
     e.preventDefault();
     playerNumber = parseInt($("#playerNumber").val());

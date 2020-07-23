@@ -402,6 +402,30 @@ input[type="submit"] {
   margin: 1rem 0 1rem 0;
 }
 
+input[type="submit"] {
+  -webkit-box-shadow: 0px 1px 0px 0px #5bc3eb;
+          box-shadow: 0px 1px 0px 0px #5bc3eb;
+  background-color: #eae0c2;
+  border-radius: 11px;
+  display: inline-block;
+  color: #36382e;
+  text-shadow: 1px 1px 1px #5bc3eb;
+  border: 1px solid #eae0c2;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc2a6;
+}
+
+input[type="submit"]:active {
+  position: relative;
+  top: 1px;
+}
+
 main .wrapper {
   display: -ms-grid;
   display: grid;
@@ -426,22 +450,59 @@ main .wrapper {
 
 .player1 {
   background-color: #a4243b;
-  border: 2rem solid #a4243b;
+  border: 0.5rem solid #d8c99b;
 }
 
 .player2 {
   background-color: #d8973c;
-  border: 2rem solid #d8973c;
+  border: 0.5rem solid #d8c99b;
 }
 
 .player3 {
   background-color: #bd632f;
-  border: 2rem solid #bd632f;
+  border: 0.5rem solid #d8c99b;
 }
 
 .player4 {
   background-color: #273e47;
-  border: 2rem solid #273e47;
+  border: 0.5rem solid #d8c99b;
+}
+
+.decrement5,
+.increment5,
+.decrement10,
+.increment10,
+.decrement1,
+.increment1 {
+  -webkit-box-shadow: 0px 1px 0px 0px #5bc3eb;
+          box-shadow: 0px 1px 0px 0px #5bc3eb;
+  background-color: #eae0c2;
+  border-radius: 11px;
+  display: inline-block;
+  color: #36382e;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  cursor: pointer;
+}
+
+.decrement5:hover,
+.increment5:hover,
+.decrement10:hover,
+.increment10:hover,
+.decrement1:hover,
+.increment1:hover {
+  background-color: #ccc2a6;
+}
+
+.decrement5:active,
+.increment5:active,
+.decrement10:active,
+.increment10:active,
+.decrement1:active,
+.increment1:active {
+  position: relative;
+  top: 1px;
 }
 
 .player1 .decrement5,
@@ -449,8 +510,8 @@ main .wrapper {
 .player3 .decrement5,
 .player4 .decrement5 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
 }
 
 .player1 .increment5,
@@ -458,8 +519,8 @@ main .wrapper {
 .player3 .increment5,
 .player4 .increment5 {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
 }
 
 .player1 .increment10,
@@ -467,8 +528,8 @@ main .wrapper {
 .player3 .increment10,
 .player4 .increment10 {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 20px;
+  right: 20px;
 }
 
 .player1 .decrement10,
@@ -476,17 +537,31 @@ main .wrapper {
 .player3 .decrement10,
 .player4 .decrement10 {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 20px;
+  left: 20px;
+}
+
+.p1Life,
+.p2Life,
+.p3Life,
+.p4Life {
+  font-size: 4rem;
+  color: #36382e;
+  background-color: #eae0c2;
+  -webkit-box-shadow: 1px 1px 1px 0px #5bc3eb;
+          box-shadow: 1px 1px 1px 0px #5bc3eb;
+  border-radius: 0.25em;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  text-shadow: 1px 1px 1px #ffffff;
 }
 
 .increment1,
 .decrement1 {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .p1p2CommanderTracker {
