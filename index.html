@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spencer Davis Project Two</title>
+    <script
+      src="https://kit.fontawesome.com/bef9dc9aad.js"
+      crossorigin="anonymous"
+    ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -15,9 +19,9 @@
     <header>
       <div class="wrapper">
         <div class="landingForm">
-          <h1>life_minder v1</h1>
+          <h1>commander life_minder v1</h1>
           <form class="displayPicker">
-            <label for="playerNumber">How many players?</label>
+            <label for="playerNumber">How many players (0-6)?</label>
             <input
               type="text"
               id="playerNumber"
@@ -104,12 +108,38 @@
             </div>
           </div>
         </section>
+        <section class="player5">
+          <div class="centralTracker">
+            <h2>Player 5</h2>
+            <span class="p5Life">40</span>
+            <div class="centralButtons">
+              <button class="decrement1">-1</button>
+              <button class="increment1">+1</button>
+              <button class="decrement5">-5</button>
+              <button class="increment5">+5</button>
+              <button class="decrement10">-10</button>
+              <button class="increment10">+10</button>
+            </div>
+          </div>
+        </section>
+        <section class="player6">
+          <div class="centralTracker">
+            <h2>Player 6</h2>
+            <span class="p6Life">40</span>
+            <div class="centralButtons">
+              <button class="decrement1">-1</button>
+              <button class="increment1">+1</button>
+              <button class="decrement5">-5</button>
+              <button class="increment5">+5</button>
+              <button class="decrement10">-10</button>
+              <button class="increment10">+10</button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer>
-      <p>
-        copyright spencer davis 2020
-      </p>
+      <p>copyright <i class="fas fa-copyright"></i> spencer davis 2020</p>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
