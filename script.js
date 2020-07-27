@@ -127,32 +127,14 @@ trackerApp.displaySetter = () => {
         behavior: "smooth",
       });
     }
+    // hide initializer form
     $("header").slideToggle();
-  });
-};
-
-trackerApp.getRandomInt = (max) => {
-  return Math.floor(Math.random() * Math.floor(max));
-};
-
-trackerApp.whoGoesFirst = () => {
-  const firstPlayer = trackerApp.getRandomInt(playerNumber) + 1;
-  if (firstPlayer === 1) {
-  }
-};
-
-trackerApp.diceRoller = () => {
-  $(".d20Button").on("click", function () {
-    diceRoll = trackerApp.getRandomInt(21);
-    console.log("trackerApp.diceRoller -> diceRoll", diceRoll);
-    $(".diceResult").text(diceRoll);
   });
 };
 
 trackerApp.init = () => {
   trackerApp.incrementDecrement();
   trackerApp.displaySetter();
-  trackerApp.diceRoller();
 };
 
 $(function () {
