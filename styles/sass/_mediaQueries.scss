@@ -2,13 +2,6 @@
   .wrapper {
     width: 100%;
   }
-  main .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
-    text-align: center;
-  }
 }
 
 @media (max-width: 345px) {

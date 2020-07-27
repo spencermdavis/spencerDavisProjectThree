@@ -402,6 +402,7 @@ h1 {
   margin-bottom: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  cursor: default;
 }
 
 .displayPicker {
@@ -436,6 +437,8 @@ input[type="submit"] {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 input[type="submit"]:hover {
@@ -450,12 +453,14 @@ input[type="submit"]:active {
 main .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 1rem;
   text-align: center;
+}
+
+main {
+  padding-top: 7rem;
 }
 
 .player1,
@@ -471,44 +476,40 @@ main .wrapper {
   text-shadow: 1px 1px 1px #91abb6;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  border: 0.5rem solid #d8c99b;
 }
 
 .player1 {
   background-color: #a4243b;
-  border: 0.5rem solid #d8c99b;
 }
 
 .player2 {
   background-color: #d8973c;
-  border: 0.5rem solid #d8c99b;
 }
 
 .player3 {
   background-color: #bd632f;
-  border: 0.5rem solid #d8c99b;
 }
 
 .player4 {
   background-color: #273e47;
-  border: 0.5rem solid #d8c99b;
 }
 
 .player5 {
   background-color: #0d526d;
-  border: 0.5rem solid #d8c99b;
 }
 
 .player6 {
   background-color: #555a49;
-  border: 0.5rem solid #d8c99b;
 }
 
-.decrement5,
-.increment5,
-.decrement10,
-.increment10,
-.decrement1,
-.increment1 {
+.player1Buttons,
+.player2Buttons,
+.player3Buttons,
+.player4Buttons,
+.player5Buttons,
+.player6Buttons,
+.d20Button {
   -webkit-box-shadow: 0px 1px 0px 0px #91abb6;
           box-shadow: 0px 1px 0px 0px #91abb6;
   background-color: #eae0c2;
@@ -521,23 +522,27 @@ main .wrapper {
   cursor: pointer;
   position: relative;
   top: 20px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
-.decrement5:hover,
-.increment5:hover,
-.decrement10:hover,
-.increment10:hover,
-.decrement1:hover,
-.increment1:hover {
+.player1Buttons:hover,
+.player2Buttons:hover,
+.player3Buttons:hover,
+.player4Buttons:hover,
+.player5Buttons:hover,
+.player6Buttons:hover,
+.d20Button:hover {
   background-color: #ccc2a6;
 }
 
-.decrement5:active,
-.increment5:active,
-.decrement10:active,
-.increment10:active,
-.decrement1:active,
-.increment1:active {
+.player1Buttons:active,
+.player2Buttons:active,
+.player3Buttons:active,
+.player4Buttons:active,
+.player5Buttons:active,
+.player6Buttons:active,
+.d20Button:active {
   top: 19px;
 }
 
@@ -564,12 +569,57 @@ main .wrapper {
           box-shadow: 1px 1px 1px 0px #91abb6;
   border-radius: 0.25em;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  text-shadow: 1px 1px 1px hsl 197, 20, 64;
+  text-shadow: 1px 1px 1px #91abb6;
+  cursor: default;
 }
 
 h2 {
   margin-bottom: 2rem;
   font-weight: 700;
+  cursor: default;
+}
+
+input[type="text"] {
+  background-color: #555a49;
+  border: 1px solid #eae0c2;
+  border-radius: 0.25em;
+  color: #eae0c2;
+}
+
+.diceRoller {
+  position: absolute;
+  top: 20px;
+  left: 900px;
+  background-color: #555a49;
+  border: 2px solid #d8c99b;
+  padding: 1rem;
+  border-radius: 0.5em;
+}
+
+.d20Button {
+  top: 0;
+}
+
+.d20Button:active {
+  top: 1px;
+}
+
+.diceRoller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: hidden;
+}
+
+.diceResult {
+  color: #d8c99b;
+  text-shadow: 1px 1px 1px #91abb6;
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 footer {
@@ -589,16 +639,6 @@ footer p {
 @media (max-width: 515px) {
   .wrapper {
     width: 100%;
-  }
-  main .wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
-    text-align: center;
   }
 }
 

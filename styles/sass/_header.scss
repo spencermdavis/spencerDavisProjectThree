@@ -29,6 +29,7 @@ h1 {
   text-shadow: 1px 1px 1px hsl(197, 20, 64);
   margin-bottom: 1rem;
   flex-wrap: wrap;
+  cursor: default;
 }
 
 .displayPicker {
@@ -57,6 +58,7 @@ input[type="submit"] {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 input[type="submit"]:hover {
