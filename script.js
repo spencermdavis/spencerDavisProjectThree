@@ -77,7 +77,7 @@ trackerApp.displaySetter = () => {
     // populate user input life total
     if (
       isNaN(playerNumber) ||
-      playerNumber < 0 ||
+      playerNumber < 1 ||
       playerNumber > 6 ||
       isNaN(startingLife) ||
       startingLife < 0
