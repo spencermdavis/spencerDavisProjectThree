@@ -115,6 +115,10 @@ trackerApp.displaySetter = () => {
     if (playerNumber >= 5) {
       $(".wrapper").css("max-width", "1200px");
     }
+    // send footer to bottom if too few modules to send it there
+    if (playerNumber < 3) {
+      $("footer").css("margin-top", "46rem");
+    }
     $(".p1Life").html(startingLife);
     $(".p2Life").html(startingLife);
     $(".p3Life").html(startingLife);
