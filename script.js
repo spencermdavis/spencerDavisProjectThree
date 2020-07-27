@@ -130,9 +130,9 @@ trackerApp.displaySetter = () => {
       document.querySelector("#main").scrollIntoView({
         behavior: "smooth",
       });
+      // hide initializer form
+      $("header").slideToggle();
     }
-    // hide initializer form
-    $("header").slideToggle();
   });
 };
 
