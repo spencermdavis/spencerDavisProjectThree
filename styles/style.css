@@ -343,6 +343,11 @@ body {
   width: auto;
 }
 
+.noLife {
+  background-color: #a4243b !important;
+  border: 1px solid #eae0c2 !important;
+}
+
 header {
   min-height: 100vh;
   display: -webkit-box;
@@ -352,6 +357,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+header p {
+  color: #d8c99b;
+  text-shadow: 1px 1px 1px #91abb6;
+  margin: 1rem 0 1rem 0;
 }
 
 .landingForm {
